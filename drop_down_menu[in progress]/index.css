@@ -1,0 +1,73 @@
+/* All selectors are sorted by type of selectors first THEN in alphabetical order */
+
+/* Element selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+div.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+
+/* Id selectors */
+
+/* Class Selectors */
+.header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > .link.active,
+.link:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 200%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 black;
+    border-radius: .2rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    /* Element selectors */
+
+    /* Id selectors */
+
+    /* Class Selectors */
+    
+    
+}
