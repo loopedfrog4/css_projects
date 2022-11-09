@@ -1,0 +1,64 @@
+/* All selectors are sorted by type of selectors first THEN in alphabetical order */
+
+/* Element selectors */
+img {
+    transition: all .3s ease-in-out;
+}
+
+img:hover {
+    transform: rotate(5deg) scale(1.2);
+}
+
+/* Id selectors */
+
+/* Class Selectors */
+.card-container {
+    display: inline-block;
+    text-align: center;
+    max-width: 200px;
+    box-shadow: 1px 0 0 0 black;
+    transition: all .3s ease-in-out;
+    
+}
+
+.card-container:hover {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.card-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+}
+
+.card-title{
+    /* background-image: linear-gradient(red, yellow); */
+}
+
+h1 {
+    box-shadow: .5rem 0 0 0 steelblue inset;
+    transition: all 0.8s ease;
+}
+
+.card-container:hover h1, .img-container{
+    box-shadow: 20rem 0 0 0 steelblue inset;
+    color: white;
+    border-top-left-radius: 1rem;
+}
+
+.img-container {
+    overflow: hidden;
+    max-height: 300px;
+}
+/* Media Queries */
+@media screen and (max-width: 600px){
+    /* Element selectors */
+
+    /* Id selectors */
+
+    /* Class Selectors */
+    
+    
+}

@@ -1,0 +1,76 @@
+/* All selectors are sorted by type of selectors first THEN in alphabetical order */
+
+/* Color Palette Used: https://colorhunt.co/palette/61764b9ba17bcfb997fad6a5 */
+
+/* Element selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+section{
+    background-color: #61764B;
+    color: #9BA17B;
+    font-size: 2rem;
+    padding: 2rem;
+    z-index: 2;
+}
+
+/* Id selectors */
+/* Class Selectors */
+.mountain-background,
+.tree-foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.mountain-background{
+    transform: translateZ(-40px) scale(8);
+    z-index: -1;
+}
+
+.tree-foreground{
+    transform: translate3d(0,0,-5px) scale(1.5);
+    z-index: 1;
+}
+
+.welcome-title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px #61764B;
+    transform: translate3d(0,-2rem,-10px) scale(2);
+    
+    z-index: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 500px){
+    /* Element selectors */
+    /* Id selectors */
+    /* Class Selectors */
+    .welcome-title{
+        font-size: 3.5rem;
+    }
+    /* Media Queries */
+}

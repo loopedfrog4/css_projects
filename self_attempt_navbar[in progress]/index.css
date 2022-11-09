@@ -1,0 +1,81 @@
+/* All selectors are sorted by type of selectors first THEN in alphabetical order */
+
+/* Element selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Id selectors */
+
+/* Class Selectors */
+.dropdown-menu {
+    position: absolute;
+    list-style-type: none;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-menu:hover{
+    display: flex;
+    flex-direction: column;
+    top: 74px;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nav-link{
+    box-shadow: 0 0 0 0 black inset;
+    transition: all .5s ease;
+    padding: 1rem;
+}
+
+.nav-link:hover, .work:focus{
+    display: inline;
+    color: white;
+    box-shadow: 10rem 0 0 0 black inset;
+    border-radius: 1rem;
+}
+
+.nav-wrapper {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+}
+
+.nav-wrapper li {
+    width: calc(50% - 5em);
+    margin: 0.5em;
+}
+
+.work:hover + .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    top: 74px;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 420px){
+    /* Element selectors */
+    
+    /* Id selectors */
+
+    /* Class Selectors */
+    
+    
+}

@@ -1,0 +1,39 @@
+/* All selectors are sorted by type of selectors first THEN in alphabetical order */
+
+/* Element selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    transition: all 1sec ease;
+    box-shadow: 0 0 0 0 lightblue inset;
+}
+
+h1:hover {
+    background-color: steelblue;
+    box-shadow: 200px 0 5px 0 lightblue inset;
+    color: white;
+}
+
+/* Id selectors */
+
+/* Class Selectors */
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    /* Element selectors */
+
+    /* Id selectors */
+
+    /* Class Selectors */
+    
+    
+}

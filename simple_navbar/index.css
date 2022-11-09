@@ -1,0 +1,79 @@
+/* Element selectors */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 1.5rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Id selectors */
+
+/* Class Selectors */
+.header-section{
+    background-color: #F6F6C9;
+}
+
+.hamburger{
+    display: none;
+}
+
+.li-link:{
+    transition: 
+}
+
+.li-link:hover{
+    animation: animate-link-border-bottom 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.website-logo{
+    width: 4rem;
+    height: 4rem;
+    transition: opacity 0.2s ease;
+}
+
+.website-logo:hover{
+    opacity: 0.7;
+}
+
+/* Animations */
+@keyframes animate-link-border-bottom{
+    from {
+        border-bottom: none;
+    }
+    to {
+        border-bottom: 2px solid black;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    /* Element selectors */
+    /* Id selectors */
+    /* Class Selectors */
+    .hamburger {
+        display: block;
+    }
+    
+}
